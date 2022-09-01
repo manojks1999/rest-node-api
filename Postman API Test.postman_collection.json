@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "8ed248e9-ecb7-471d-92c1-91e22b6c6e39",
+		"name": "Postman API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15805729"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 1,\n    \"newUserId\":6,\n    \"userPassword\": \"123456789\",\n    \"newUserPassword\": \"987654321\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/editUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 1,\n    \"newUserId\":9,\n    \"userPassword\": \"123456789\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/editUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"editUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/searchUser/all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 6,\n    \"newUserId\":9,\n    \"userPassword\": \"1258684\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/searchUser/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"searchUser",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/searchUser/all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 6,\n    \"newUserId\":9,\n    \"userPassword\": \"1258684\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/searchUser/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"searchUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/createGroup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 6,\n    \"newUserId\":121,\n    \"userPassword\": \"1258684\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false,\n    \"groupId\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/createGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"createGroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/deleteGroup",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 6,\n    \"newUserId\":121,\n    \"userPassword\": \"1258684\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false,\n    \"groupId\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/deleteGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteGroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/addMember",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 6,\n    \"newUserId\":3,\n    \"userPassword\": \"1258684\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false,\n    \"groupId\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/addMember",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/sendMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 2,\n    \"newUserId\":3,\n    \"userPassword\": \"987654321\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false,\n    \"groupId\":2,\n    \"msg\": \"Hello\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/viewMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 3,\n    \"newUserId\":3,\n    \"userPassword\": \"987654321\",\n    \"newUserPassword\": \"1258684\",\n    \"name\": \"Man\",\n    \"email\": \"man@gmail.com\",\n    \"admin\": false,\n    \"groupId\":2,\n    \"msg\": \"Hello\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/viewMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"viewMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
